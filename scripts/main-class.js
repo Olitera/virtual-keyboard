@@ -12,6 +12,13 @@ class MainClass {
       });
   }
 
+  createTextarea() {
+    const textarea = document.createElement('textarea');
+    textarea.className = "textarea";
+    body.append(textarea);
+    return textarea;
+  }
+
   createContainer() {
     const container = document.createElement(`div`);
     container.className = "container";
