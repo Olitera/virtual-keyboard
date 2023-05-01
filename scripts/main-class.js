@@ -1,7 +1,9 @@
 const body = document.querySelector('body');
 
 class MainClass {
+  isCapslook = false;
   keyboard;
+  buttonsElements;
 
   getData() {
     return fetch('keyboard.json')
@@ -26,7 +28,8 @@ class MainClass {
     return container;
   }
 
-  checkClick(textarea, keyValue) {
+  checkClick(textarea, keyValue, index) {
+    console.log(keyValue)
     const currentPosition = textarea.selectionStart;
     textarea.focus();
     switch (keyValue) {
@@ -38,13 +41,14 @@ class MainClass {
         }
         break;
       case 'ENTER':
-        textarea += '\n';
+        textarea.value += '\n';
         break;
       case 'Caps Lock':
-        // textarea.value = textarea.value.toUpperCase();
+        this.isCapslook = !this.isCapslook;
+        this.buttonsElements[index].classList.toggle('active'); 
         break;
       case 'Tab':
-        textarea += '    ';
+        textarea.value += '    ';
         break;
       case 'DEL':
         textarea.value = this.removeSymbol(textarea.value, currentPosition);
@@ -59,16 +63,39 @@ class MainClass {
         break;
       case 'Win':
         break;
-      case '&#8896':
+      case '&#8896'://up
+        const matrix = textarea.value.split('\n').map(el => el.split(''));
+        let curI = 0;
+        let curJ = 0;
+        let a = 0;
+        
+        const indexArray = matrix.map((element, i) => {
+          const b = matrix[i].map((el,j) => {
+            if(a === textarea.selectionStart) {
+              curI = i;
+              curJ = j
+            }
+            a++;
+            return a - 1;
+          })
+          a++;
+          return b;
+        });
+        console.log(matrix, textarea.selectionStart, {curI, curJ}, indexArray)
+        textarea.selectionStart = indexArray[curI-1][curJ];
+        textarea.selectionEnd = indexArray[curI-1][curJ];
         break;
-      case '&#8897':
+      case '&#8897': //down
+        textarea.selectionStart = this.checkPosition(textarea).indexArray[this.checkPosition(textarea).curI+1][this.checkPosition(textarea).curJ];
+        textarea.selectionEnd = textarea.selectionStart;
         break;
       case '>':
         textarea.selectionStart += 1;
-        textarea.selectionEnd += 1;
+        // textarea.selectionEnd += 1;
         
         break;
       case '<':
+        console.log(textarea.selectionStart,'ff', textarea.selectionEnd )
         if (textarea.selectionStart > 0) {
         textarea.selectionStart -= 1;
         textarea.selectionEnd -= 1;
@@ -84,6 +111,9 @@ class MainClass {
   }
 
   addSymbol(text, position, symbol){
+    if (this.isCapslook) {
+      symbol = symbol.toUpperCase();
+    }
     const arr = text.split('');
     arr.splice(position, 0, symbol);
     return arr.join('');
@@ -91,8 +121,33 @@ class MainClass {
 
   removeSymbol(text, position) {
     const arr = text.split('');
+    console.log(arr);
     arr.splice(position, 1);
     return arr.join('');
+  }
+
+  checkPosition(textarea) {
+    const matrix = textarea.value.split('\n').map(el => el.split(''));
+        let curI = 0;
+        let curJ = 0;
+        let a = 0;
+        
+        const indexArray = matrix.map((element, i) => {
+          const b = matrix[i].map((el,j) => {
+            if(a === textarea.selectionStart) {
+              curI = i;
+              curJ = j
+            }
+            a++;
+            return a - 1;
+          })
+          a++;
+          return b;
+        });
+        return {indexArray, curI , curJ }
+        // console.log(matrix, textarea.selectionStart, {curI, curJ}, indexArray)
+        // textarea.selectionStart = indexArray[curI-1][curJ];
+        // textarea.selectionEnd = indexArray[curI-1][curJ];
   }
 
   // setPosition(position) {
