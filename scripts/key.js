@@ -2,6 +2,8 @@ class Key {
   constructor(data) {
     this.size = data.size;
     this.value = data.value;
+    this.keyCode = data.keyCode;
+    this.code = data.code;
   }
 
   createKey() {

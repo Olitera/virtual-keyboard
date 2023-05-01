@@ -1,266 +1,396 @@
 [
   {
     "size": "basic-speshl",
-    "value": "`"
+    "value": "`",
+    "keycode": "192",
+    "code": "IntlBackslash"
   },
   {
     "size": "basic",
-    "value": "1"
+    "value": "1",
+    "keycode": "49",
+    "code": "Digit1"
   },
   {
     "size": "basic",
-    "value": "2"
+    "value": "2",
+    "keycode": "50",
+    "code": "Digit2"
   },
   {
     "size": "basic",
-    "value": "3"
+    "value": "3",
+    "keycode": "51",
+    "code": "Digit3"
   },
   {
     "size": "basic",
-    "value": "4"
+    "value": "4",
+    "keycode": "52",
+    "code": "Digit4"
   },
   {
     "size": "basic",
-    "value": "5"
+    "value": "5",
+    "keycode": "53",
+    "code": "Digit5"
   },
   {
     "size": "basic",
-    "value": "6"
+    "value": "6",
+    "keycode": "54",
+    "code": "Digit6"
   },
   {
     "size": "basic",
-    "value": "7"
+    "value": "7",
+    "keycode": "55",
+    "code": "Digit7"
   },
   {
     "size": "basic",
-    "value": "8"
+    "value": "8",
+    "keycode": "56",
+    "code": "Digit8"
   },
   {
     "size": "basic",
-    "value": "9"
+    "value": "9",
+    "keycode": "57",
+    "code": "Digit9"
   },
   {
     "size": "basic",
-    "value": "0"
+    "value": "0",
+    "keycode": "48",
+    "code": "Digit0"
   },
   {
     "size": "basic",
-    "value": "-"
+    "value": "-",
+    "keycode": "189",
+    "code": "Minus"
   },
   {
     "size": "basic",
-    "value": "="
+    "value": "=",
+    "keycode": "187",
+    "code": "Equal"
   },
   {
     "size": "long",
-    "value": "Backspace"
+    "value": "Backspace",
+    "keycode": "8",
+    "code": "Backspace"
   },
 
   {
     "size": "tab",
-    "value": "Tab"
+    "value": "Tab",
+    "keycode": "9",
+    "code": "Tab"
   },
   {
     "size": "basic",
-    "value": "q"
+    "value": "q",
+    "keycode": "81",
+    "code": "KeyQ"
   },
   {
     "size": "basic",
-    "value": "w"
+    "value": "w",
+    "keycode": "87",
+    "code": "KeyW"
   },
   {
     "size": "basic",
-    "value": "e"
+    "value": "e",
+    "keycode": "69",
+    "code": "KeyE"
   },
   {
     "size": "basic",
-    "value": "r"
+    "value": "r",
+    "keycode": "82",
+    "code": "KeyR"
   },
   {
     "size": "basic",
-    "value": "t"
+    "value": "t",
+    "keycode": "84",
+    "code": "KeyT"
   },
   {
     "size": "basic",
-    "value": "y"
+    "value": "y",
+    "keycode": "89",
+    "code": "KeyY"
   },
   {
     "size": "basic",
-    "value": "u"
+    "value": "u",
+    "keycode": "85",
+    "code": "KeyU"
   },
   {
     "size": "basic",
-    "value": "i"
+    "value": "i",
+    "keycode": "73",
+    "code": "KeyI"
   },
   {
     "size": "basic",
-    "value": "o"
+    "value": "o",
+    "keycode": "79",
+    "code": "KeyO"
   },{
     "size": "basic",
-    "value": "p"
+    "value": "p",
+    "keycode": "80",
+    "code": "KeyP"
   },
   {
     "size": "basic",
-    "value": "["
+    "value": "[",
+    "keycode": "219",
+    "code": "BracketLeft"
   },
   {
     "size": "basic",
-    "value": "]"
+    "value": "]",
+    "keycode": "221",
+    "code": "BracketRight"
   },
   {
     "size": "basic",
-    "value": "\\"
+    "value": "\\",
+    "keycode": "220",
+    "code": "Backslash"
   },
   {
     "size": "del",
-    "value": "DEL"
+    "value": "DEL",
+    "keycode": "46",
+    "code": "Delete"
   },
 
   {
     "size": "long",
-    "value": "Caps Lock"
+    "value": "Caps Lock",
+    "keycode": "20",
+    "code": "CapsLock"
   },
   {
     "size": "basic",
-    "value": "a"
+    "value": "a",
+    "keycode": "65",
+    "code": "KeyA"
   },
   {
     "size": "basic",
-    "value": "s"
+    "value": "s",
+    "keycode": "83",
+    "code": "KeyS"
   },
   {
     "size": "basic",
-    "value": "d"
+    "value": "d",
+    "keycode": "68",
+    "code": "KeyD"
   },
   {
     "size": "basic",
-    "value": "f"
+    "value": "f",
+    "keycode": "70",
+    "code": "KeyF"
   },
   {
     "size": "basic",
-    "value": "g"
+    "value": "g",
+    "keycode": "71",
+    "code": "KeyG"
   },
   {
     "size": "basic",
-    "value": "h"
+    "value": "h",
+    "keycode": "72",
+    "code": "KeyH"
   },
   {
     "size": "basic",
-    "value": "j"
+    "value": "j",
+    "keycode": "74",
+    "code": "KeyJ"
   },
   {
     "size": "basic",
-    "value": "k"
+    "value": "k",
+    "keycode": "75",
+    "code": "KeyK"
   },
   {
     "size": "basic",
-    "value": "l"
+    "value": "l",
+    "keycode": "76",
+    "code": "KeyL"
   },
   {
     "size": "basic",
-    "value": ";"
+    "value": ";",
+    "keycode": "186",
+    "code": "Semicolon"
   },
   {
     "size": "basic",
-    "value": "'"
+    "value": "'",
+    "keycode": "222",
+    "code": "Quote"
   },
   {
     "size": "enter",
-    "value": "ENTER"
+    "value": "ENTER",
+    "keycode": "13",
+    "code": "Enter"
   },
 
   {
     "size": "long",
-    "value": "Shift"
+    "value": "Shift",
+    "keycode": "16",
+    "code": "ShiftLeft"
   },
   {
     "size": "basic",
-    "value": "\\"
+    "value": "\\",
+    "keycode": "220",
+    "code": "Backslash"
   },
   {
     "size": "basic",
-    "value": "z"
+    "value": "z",
+    "keycode": "90",
+    "code": "KeyZ"
   },
   {
     "size": "basic",
-    "value": "x"
+    "value": "x",
+    "keycode": "88",
+    "code": "KeyX"
   },
   {
     "size": "basic",
-    "value": "c"
+    "value": "c",
+    "keycode": "67",
+    "code": "KeyC"
   },
   {
     "size": "basic",
-    "value": "v"
+    "value": "v",
+    "keycode": "86",
+    "code": "KeyV"
   },
   {
     "size": "basic",
-    "value": "b"
+    "value": "b",
+    "keycode": "66",
+    "code": "KeyB"
   },
   {
     "size": "basic",
-    "value": "n"
+    "value": "n",
+    "keycode": "78",
+    "code": "KeyN"
   },
   {
     "size": "basic",
-    "value": "m"
+    "value": "m",
+    "keycode": "77",
+    "code": "KeyM"
   },
   {
     "size": "basic",
-    "value": "."
+    "value": ".",
+    "keycode": "188",
+    "code": "Period"
   },
   {
     "size": "basic",
-    "value": ","
+    "value": ",",
+    "keycode": "190",
+    "code": "Comma"
   },
   {
     "size": "basic",
-    "value": "/"
+    "value": "/",
+    "keycode": "191",
+    "code": "Slash"
   },
   {
     "size": "basic-speshl",
-    "value": "&#8896"
+    "value": "&#8896",
+    "keycode": "38",
+    "code": "ArrowUp"
   },
   {
     "size": "basic-speshl",
-    "value": "Shift"
+    "value": "Shift",
+    "keycode": "16",
+    "code": "ShiftRight"
   },
 
   {
     "size": "ctrl",
-    "value": "Ctrl"
+    "value": "Ctrl",
+    "keycode": "17",
+    "code": "ControlLeft"
   },
   {
     "size": "basic-speshl",
-    "value": "Win"
+    "value": "Win",
+    "keycode": "91",
+    "code": "MetaLeft"
   },
   {
     "size": "basic-speshl",
-    "value": "Alt"
+    "value": "Alt",
+    "keycode": "18",
+    "code": "AltLeft"
   },
   {
     "size": "space",
-    "value": ""
+    "value": " ",
+    "keycode": "32",
+    "code": "Space"
   },
   {
     "size": "basic-speshl",
-    "value": "Alt"
+    "value": "Alt",
+    "keycode": "18",
+    "code": "AltRight"
   },
   {
     "size": "ctrl",
-    "value": "Ctrl"
+    "value": "Ctrl",
+    "keycode": "17",
+    "code": "ControlRight"
   },
   {
     "size": "basic-speshl",
-    "value": "<"
+    "value": "<",
+    "keycode": "37",
+    "code": "ArrowLeft"
   },
   {
     "size": "basic-speshl",
-    "value": "&#8897"
+    "value": "&#8897",
+    "keycode": "40",
+    "code": "ArrowDown"
   },
   {
     "size": "basic-speshl",
-    "value": ">"
+    "value": ">",
+    "keycode": "39",
+    "code": "ArrowRight"
   }
 
 ]

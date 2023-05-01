@@ -4,17 +4,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .textarea {
-  width: 92%;
+  width: 94%;
   height: 24%;
+  max-width: 1280px;
+  box-sizing: border-box;
+  border-width: 2px;
 }
 
 .container {
   width: 94%;
   aspect-ratio: 1400/480;
+  max-width: 1280px;
+  column-gap: 0.5%;
   /* background: cornflowerblue; */
   display: flex;
   flex-wrap: wrap;
@@ -26,9 +31,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 17%;
+  height: calc(100% /6);
   border: solid 1px #ede688;
   border-radius: 5px;
+}
+
+.key:active {
+  background-color: #ede688;
 }
 
 .basic {
@@ -71,3 +80,6 @@ body {
   background-color: rgb(156, 225, 225);
 }
 
+.active {
+  background-color: #ede688;
+}
