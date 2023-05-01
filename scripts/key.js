@@ -4,6 +4,9 @@ class Key {
     this.value = data.value;
     this.keyCode = data.keyCode;
     this.code = data.code;
+    this.value2 = data.value2;
+    this.value3 = data.value3;
+    this.value4 = data.value4;
   }
 
   createKey() {
@@ -13,6 +16,7 @@ class Key {
     key.classList.add(this.size);
     return key;
   }
+  
 } 
 
 export default Key;

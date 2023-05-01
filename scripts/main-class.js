@@ -56,12 +56,13 @@ class MainClass {
         textarea.selectionEnd = currentPosition;
         break;
       case 'Shift':
+        textarea.value
         break;
       case 'Alt':
         break;
       case 'Ctrl':
         break;
-      case 'Win':
+      case 'Cmd':
         break;
       case '&#8896'://up
         const matrix = textarea.value.split('\n').map(el => el.split(''));
