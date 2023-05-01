@@ -1,0 +1,89 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.textarea {
+  width: 94%;
+  height: 24%;
+  max-width: 1280px;
+  box-sizing: border-box;
+  border-width: 2px;
+}
+
+.container {
+  width: 94%;
+  aspect-ratio: 1400/480;
+  max-width: 1280px;
+  column-gap: 0.5%;
+  /* background: cornflowerblue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% /6);
+  border: solid 1px #ede688;
+  border-radius: 5px;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.key:active {
+  background-color: #ede688;
+  transform: rotateX(360deg);
+}
+
+.basic {
+  aspect-ratio: 1;
+  background-color: rgb(195, 227, 227);
+}
+
+.basic-speshl {
+  aspect-ratio: 1;
+  background-color: rgb(156, 225, 225);
+}
+
+.long {
+  aspect-ratio: 200/80;
+  background-color: rgb(156, 225, 225);
+}
+
+.space {
+  aspect-ratio: 570/80;
+  background-color: rgb(195, 227, 227);
+}
+
+.tab {
+  aspect-ratio: 100/80;
+  background-color: rgb(156, 225, 225);
+}
+
+.del {
+  aspect-ratio: 88/80;
+  background-color: rgb(156, 225, 225);
+}
+
+.enter {
+  aspect-ratio: 172/80;
+  background-color: rgb(156, 225, 225);
+}
+
+.ctrl {
+  aspect-ratio: 125/80;
+  background-color: rgb(156, 225, 225);
+}
+
+.active {
+  background-color: #ede688;
+  transform: rotateX(360deg);
+}

@@ -1,0 +1,582 @@
+[
+  {
+    "size": "basic-speshl",
+    "value": "`",
+    "keycode": "192",
+    "code": "IntlBackslash",
+    "value2": "~",
+    "value3": "",
+    "value4": "“"
+  },
+  {
+    "size": "basic",
+    "value": "1",
+    "keycode": "49",
+    "code": "Digit1",
+    "value2": "!",
+    "value3": "",
+    "value4": "!"
+  },
+  {
+    "size": "basic",
+    "value": "2",
+    "keycode": "50",
+    "code": "Digit2",
+    "value2": "@",
+    "value3": "",
+    "value4": "\""
+  },
+  {
+    "size": "basic",
+    "value": "3",
+    "keycode": "51",
+    "code": "Digit3",
+    "value2": "#",
+    "value3": "",
+    "value4": "№"
+  },
+  {
+    "size": "basic",
+    "value": "4",
+    "keycode": "52",
+    "code": "Digit4",
+    "value2": "$",
+    "value3": "",
+    "value4": "%"
+  },
+  {
+    "size": "basic",
+    "value": "5",
+    "keycode": "53",
+    "code": "Digit5",
+    "value2": "%",
+    "value3": "",
+    "value4": ":"
+  },
+  {
+    "size": "basic",
+    "value": "6",
+    "keycode": "54",
+    "code": "Digit6",
+    "value2": "^",
+    "value3": "",
+    "value4": ","
+  },
+  {
+    "size": "basic",
+    "value": "7",
+    "keycode": "55",
+    "code": "Digit7",
+    "value2": "&",
+    "value3": "",
+    "value4": "."
+  },
+  {
+    "size": "basic",
+    "value": "8",
+    "keycode": "56",
+    "code": "Digit8",
+    "value2": "*",
+    "value3": "",
+    "value4": ";"
+  },
+  {
+    "size": "basic",
+    "value": "9",
+    "keycode": "57",
+    "code": "Digit9",
+    "value2": "(",
+    "value3": "",
+    "value4": "("
+  },
+  {
+    "size": "basic",
+    "value": "0",
+    "keycode": "48",
+    "code": "Digit0",
+    "value2": ")",
+    "value3": "",
+    "value4": ")"
+  },
+  {
+    "size": "basic",
+    "value": "-",
+    "keycode": "189",
+    "code": "Minus",
+    "value2": "_",
+    "value3": "",
+    "value4": "_"
+  },
+  {
+    "size": "basic",
+    "value": "=",
+    "keycode": "187",
+    "code": "Equal",
+    "value2": "+",
+    "value3": "",
+    "value4": "+"
+  },
+  {
+    "size": "long",
+    "value": "Backspace",
+    "keycode": "8",
+    "code": "Backspace",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+
+  {
+    "size": "tab",
+    "value": "Tab",
+    "keycode": "9",
+    "code": "Tab",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "q",
+    "keycode": "81",
+    "code": "KeyQ",
+    "value2": "",
+    "value3": "й",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "w",
+    "keycode": "87",
+    "code": "KeyW",
+    "value2": "",
+    "value3": "ц",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "e",
+    "keycode": "69",
+    "code": "KeyE",
+    "value2": "",
+    "value3": "у",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "r",
+    "keycode": "82",
+    "code": "KeyR",
+    "value2": "",
+    "value3": "к",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "t",
+    "keycode": "84",
+    "code": "KeyT",
+    "value2": "",
+    "value3": "е",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "y",
+    "keycode": "89",
+    "code": "KeyY",
+    "value2": "",
+    "value3": "н",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "u",
+    "keycode": "85",
+    "code": "KeyU",
+    "value2": "",
+    "value3": "г",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "i",
+    "keycode": "73",
+    "code": "KeyI",
+    "value2": "",
+    "value3": "ш",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "o",
+    "keycode": "79",
+    "code": "KeyO",
+    "value2": "",
+    "value3": "ў",
+    "value4": ""
+  },{
+    "size": "basic",
+    "value": "p",
+    "keycode": "80",
+    "code": "KeyP",
+    "value2": "",
+    "value3": "з",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "[",
+    "keycode": "219",
+    "code": "BracketLeft",
+    "value2": "{",
+    "value3": "х",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "]",
+    "keycode": "221",
+    "code": "BracketRight",
+    "value2": "}",
+    "value3": "'",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "\\",
+    "keycode": "220",
+    "code": "Backslash",
+    "value2": "|",
+    "value3": "ё",
+    "value4": ""
+  },
+  {
+    "size": "del",
+    "value": "DEL",
+    "keycode": "46",
+    "code": "Delete",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+
+  {
+    "size": "long",
+    "value": "Caps Lock",
+    "keycode": "20",
+    "code": "CapsLock",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "a",
+    "keycode": "65",
+    "code": "KeyA",
+    "value2": "",
+    "value3": "ф",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "s",
+    "keycode": "83",
+    "code": "KeyS",
+    "value2": "",
+    "value3": "ы",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "d",
+    "keycode": "68",
+    "code": "KeyD",
+    "value2": "",
+    "value3": "в",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "f",
+    "keycode": "70",
+    "code": "KeyF",
+    "value2": "",
+    "value3": "а",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "g",
+    "keycode": "71",
+    "code": "KeyG",
+    "value2": "",
+    "value3": "п",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "h",
+    "keycode": "72",
+    "code": "KeyH",
+    "value2": "",
+    "value3": "р",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "j",
+    "keycode": "74",
+    "code": "KeyJ",
+    "value2": "",
+    "value3": "о",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "k",
+    "keycode": "75",
+    "code": "KeyK",
+    "value2": "",
+    "value3": "л",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "l",
+    "keycode": "76",
+    "code": "KeyL",
+    "value2": "",
+    "value3": "д",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": ";",
+    "keycode": "186",
+    "code": "Semicolon",
+    "value2": ":",
+    "value3": "ж",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "'",
+    "keycode": "222",
+    "code": "Quote",
+    "value2": "\"",
+    "value3": "э",
+    "value4": ""
+  },
+  {
+    "size": "enter",
+    "value": "ENTER",
+    "keycode": "13",
+    "code": "Enter",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+
+  {
+    "size": "long",
+    "value": "Shift",
+    "keycode": "16",
+    "code": "ShiftLeft",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "z",
+    "keycode": "90",
+    "code": "KeyZ",
+    "value2": "",
+    "value3": "я",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "x",
+    "keycode": "88",
+    "code": "KeyX",
+    "value2": "",
+    "value3": "ч",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "c",
+    "keycode": "67",
+    "code": "KeyC",
+    "value2": "",
+    "value3": "с",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "v",
+    "keycode": "86",
+    "code": "KeyV",
+    "value2": "",
+    "value3": "м",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "b",
+    "keycode": "66",
+    "code": "KeyB",
+    "value2": "",
+    "value3": "і",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "n",
+    "keycode": "78",
+    "code": "KeyN",
+    "value2": "",
+    "value3": "т",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "m",
+    "keycode": "77",
+    "code": "KeyM",
+    "value2": "",
+    "value3": "ь",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": ",",
+    "keycode": "190",
+    "code": "Comma",
+    "value2": "<",
+    "value3": "б",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": ".",
+    "keycode": "188",
+    "code": "Period",
+    "value2": ">",
+    "value3": "ю",
+    "value4": ""
+  },
+  {
+    "size": "basic",
+    "value": "/",
+    "keycode": "191",
+    "code": "Slash",
+    "value2": "?",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic-speshl",
+    "value": "&#8896",
+    "keycode": "38",
+    "code": "ArrowUp",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "long",
+    "value": "Shift",
+    "keycode": "16",
+    "code": "ShiftRight",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+
+  {
+    "size": "ctrl",
+    "value": "Ctrl",
+    "keycode": "17",
+    "code": "ControlLeft",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic-speshl",
+    "value": "Cmd",
+    "keycode": "91",
+    "code": "MetaLeft",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic-speshl",
+    "value": "Alt",
+    "keycode": "18",
+    "code": "AltLeft",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "space",
+    "value": " ",
+    "keycode": "32",
+    "code": "Space",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic-speshl",
+    "value": "Alt",
+    "keycode": "18",
+    "code": "AltRight",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic-speshl",
+    "value": "<",
+    "keycode": "37",
+    "code": "ArrowLeft",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic-speshl",
+    "value": "&#8897",
+    "keycode": "40",
+    "code": "ArrowDown",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "basic-speshl",
+    "value": ">",
+    "keycode": "39",
+    "code": "ArrowRight",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  },
+  {
+    "size": "tab",
+    "value": "Ctrl",
+    "keycode": "17",
+    "code": "ControlRight",
+    "value2": "",
+    "value3": "",
+    "value4": ""
+  }
+
+]
