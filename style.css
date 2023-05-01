@@ -34,10 +34,13 @@ body {
   height: calc(100% /6);
   border: solid 1px #ede688;
   border-radius: 5px;
+  transform: rotateX(0deg);
+  transition: 0.5s;
 }
 
 .key:active {
   background-color: #ede688;
+  transform: rotateX(360deg);
 }
 
 .basic {
@@ -82,4 +85,5 @@ body {
 
 .active {
   background-color: #ede688;
+  transform: rotateX(360deg);
 }

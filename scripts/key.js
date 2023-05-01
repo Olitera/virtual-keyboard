@@ -9,14 +9,17 @@ class Key {
     this.value4 = data.value4;
   }
 
-  createKey() {
+  createKey(isEn) {
     const key = document.createElement('div');
-    key.className = "key";
-    key.innerHTML = this.value;
+    key.className = 'key';
+    if(isEn || !this.value3) {
+      key.innerHTML = this.value;
+    } else {
+      key.innerHTML = this.value3;
+    }
     key.classList.add(this.size);
     return key;
   }
-  
-} 
+}
 
 export default Key;
