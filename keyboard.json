@@ -480,7 +480,7 @@
   },
   {
     "size": "basic-speshl",
-    "value": "&#8896",
+    "value": "⋀",
     "keycode": "38",
     "code": "ArrowUp",
     "value2": "",
@@ -553,7 +553,7 @@
   },
   {
     "size": "basic-speshl",
-    "value": "&#8897",
+    "value": "⋁",
     "keycode": "40",
     "code": "ArrowDown",
     "value2": "",
