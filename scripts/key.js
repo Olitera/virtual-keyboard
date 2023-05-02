@@ -12,7 +12,7 @@ class Key {
   createKey(isEn) {
     const key = document.createElement('div');
     key.className = 'key';
-    if(isEn || !this.value3) {
+    if (isEn || !this.value3) {
       key.innerHTML = this.value;
     } else {
       key.innerHTML = this.value3;

@@ -1,7 +1,7 @@
 const body = document.querySelector('body');
 
 class MainClass {
-  isCapslook = false;
+  isCapslook = localStorage.getItem('isCapsLock') ? localStorage.getItem('isCapsLock') === 'true' : false;
 
   keyboard;
 
