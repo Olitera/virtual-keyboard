@@ -12,8 +12,40 @@ mainClass.getData().then((data) => {
     const key = new Key(element).createKey(isEn);
     key.addEventListener('click', () => {
       const value = keys[i].innerText;
-      return mainClass.checkClick(textarea, value, i);
-    });
+      return mainClass.checkClick(textarea, keys, i);
+      // return mainClass.checkClick(textarea, value, i);
+    });console.log(element);
+    function listener(event) {
+      event.target.addEventListener('mousedown', () => {
+        if (mainClass.isCapslook) {
+          for (let i = 0; i < keys.length; i++) {
+            if (keys[i].innerText.match(/\D/) && keys[i].innerText.length === 1 && data[i].value.length === 1) {
+              keys[i].innerText = keys[i].innerText.toUpperCase();
+            }
+          }
+        }
+      })
+    }
+    if(element.keycode == 16) {
+      // key.addEventListener('mouseenter', listener)
+      key.addEventListener('mousedown',() => {
+        for (let i = 0; i < keys.length; i++) {
+          if (keys[i].innerText.match(/\D/) && keys[i].innerText.length === 1 && data[i].value.length === 1) {
+            keys[i].innerText = keys[i].innerText.toUpperCase();
+          }
+        }
+      })
+      key.addEventListener('mouseup', () => {
+        for (let i = 0; i < keys.length; i++) {
+          if (keys[i].innerText.match(/\D/) && keys[i].innerText.length === 1 && data[i].value.length === 1) {
+            keys[i].innerText = keys[i].innerText.toLowerCase();
+          }
+        }
+      })
+
+    }
+    
+    
     container.append(key);
     return key;
   });
@@ -114,7 +146,7 @@ mainClass.getData().then((data) => {
     const index = data.findIndex(({ code }) => code === event.code);
 
     console.log(event.keyCode);
-    if (event.keyCode != 32 && event.keyCode != 9 && event.keyCode != 20 && event.keyCode != 16 && event.keyCode != 17 && event.keyCode != 18 && event.keyCode != 13 && event.keyCode != 37 && event.keyCode != 38 && event.keyCode != 39 && event.keyCode != 40 && event.keyCode != 91) {
+    if (event.keyCode != 46 && event.keyCode != 8 && event.keyCode != 32 && event.keyCode != 9 && event.keyCode != 20 && event.keyCode != 16 && event.keyCode != 17 && event.keyCode != 18 && event.keyCode != 13 && event.keyCode != 37 && event.keyCode != 38 && event.keyCode != 39 && event.keyCode != 40 && event.keyCode != 91) {
       event.preventDefault();
       const start = textarea.selectionStart;
       if (keys[index]) {

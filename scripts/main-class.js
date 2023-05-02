@@ -38,10 +38,29 @@ class MainClass {
     return text;
   }
 
-  checkClick(textarea, keyValue, index) {
-    console.log(keyValue);
+  checkClick(textarea, keys, index) {
+    let keyValue = keys[index].innerText;
     const currentPosition = textarea.selectionStart;
     textarea.focus();
+    const matrix = textarea.value.split('\n').map((el) => el.split(''));
+        let curI = 0;
+        let curJ = 0;
+        let a = 0;
+
+        const indexArray = matrix.map((element, i) => {
+          const b = matrix[i].map((el, j) => {
+            a++;
+            if (a === textarea.selectionStart) {
+              curI = i;
+              curJ = j+1;
+            }
+            
+            return a - 1;
+          });
+          a++;
+          return b;
+        });
+        console.log(keyValue)
     switch (keyValue) {
       case 'Backspace':
         if (currentPosition > 0) {
@@ -55,6 +74,12 @@ class MainClass {
         break;
       case 'Caps Lock':
         this.isCapslook = !this.isCapslook;
+        localStorage.setItem('isCapsLock', `${this.isCapslook}`);
+        for (let i = 0; i < keys.length; i++) {
+          if (keys[i].innerText.match(/\D/) && keys[i].innerText.length === 1 && this.keyboard[i].value.length === 1) {
+            keys[i].innerText = this.isCapslook ? keys[i].innerText.toUpperCase() : keys[i].innerText.toLowerCase();
+          }
+        }
         this.buttonsElements[index].classList.toggle('active');
         break;
       case 'Tab':
@@ -66,7 +91,7 @@ class MainClass {
         textarea.selectionEnd = currentPosition;
         break;
       case 'Shift':
-        textarea.value;
+        // textarea.value;
         break;
       case 'Alt':
         break;
@@ -74,31 +99,25 @@ class MainClass {
         break;
       case 'Cmd':
         break;
-      case '&#8896':// up
-        const matrix = textarea.value.split('\n').map((el) => el.split(''));
-        let curI = 0;
-        let curJ = 0;
-        let a = 0;
-
-        const indexArray = matrix.map((element, i) => {
-          const b = matrix[i].map((el, j) => {
-            if (a === textarea.selectionStart) {
-              curI = i;
-              curJ = j;
-            }
-            a++;
-            return a - 1;
-          });
-          a++;
-          return b;
-        });
-        console.log(matrix, textarea.selectionStart, { curI, curJ }, indexArray);
-        textarea.selectionStart = indexArray[curI - 1][curJ];
-        textarea.selectionEnd = indexArray[curI - 1][curJ];
+      case '⋀':// up
+        if(matrix.length > 1 && curI > 0 && indexArray[curI - 1][curJ]){
+          textarea.selectionEnd = indexArray[curI - 1][curJ];  
+        } else if (matrix.length > 1 & curI > 0 && !indexArray[curI - 1][curJ]) {
+          
+          textarea.selectionEnd = indexArray[curI - 1][indexArray[curI-1].length-1] +1;  
+        } else {
+          textarea.selectionEnd = 0;
+        }
         break;
-      case '&#8897': // down
-        textarea.selectionStart = this.checkPosition(textarea).indexArray[this.checkPosition(textarea).curI + 1][this.checkPosition(textarea).curJ];
-        textarea.selectionEnd = textarea.selectionStart;
+      case '⋁': // down
+      
+      if(matrix.length > 1 && matrix[curI+1] && matrix[curI+1][curJ] ){
+        textarea.selectionStart = indexArray[curI +1][curJ];
+      } else if(matrix[curI+1] && !matrix[curI+1][curJ]) {
+        textarea.selectionStart = indexArray[curI+1][matrix[curI+1].length - 1] + 1;
+      } else {
+        textarea.selectionStart = textarea.value.length;
+      }
         break;
       case '>':
         textarea.selectionStart += 1;
@@ -114,6 +133,7 @@ class MainClass {
         console.log(textarea.selectionStart);
         break;
       default:
+        console.log(keyValue)
         textarea.value = this.addSymbol(textarea.value, currentPosition, keyValue);
         textarea.selectionStart = currentPosition + 1;
         textarea.selectionEnd = currentPosition + 1;
