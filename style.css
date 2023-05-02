@@ -36,6 +36,7 @@ body {
   border-radius: 5px;
   transform: rotateX(0deg);
   transition: 0.5s;
+  user-select: none;
 }
 
 .key:active {
